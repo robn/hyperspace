@@ -2,8 +2,8 @@
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
-#include <GL/glew.h>
 #include "SDL.h"
+#include "GL/gl.h"
 #include "vector3.h"
 
 const int WIDTH = 1440;
@@ -51,8 +51,6 @@ int main(int argc, char *argv[])
 	}
 
 	SDL_WM_SetCaption("hyperspace", "hyperspace");
-
-	glewInit();
 
 	glShadeModel(GL_SMOOTH);
 	glCullFace(GL_BACK);

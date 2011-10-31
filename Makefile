@@ -1,5 +1,5 @@
-CXXFLAGS = -Wall -ggdb $(shell sdl-config --cflags) $(shell pkg-config glew --cflags)
-LDFLAGS = $(shell sdl-config --libs) $(shell pkg-config glew --libs) -lGL
+CXXFLAGS = -Wall -ggdb $(shell sdl-config --cflags)
+LDFLAGS = $(shell sdl-config --libs) -lGL
 
 OBJS = hyperspace.o
 
